@@ -1,0 +1,23 @@
+
+
+<html>
+ 
+<script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script> 
+<script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+<script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
+
+  <a-scene>
+
+  </a-scene>
+
+<!-- wiglypuff -->
+<a-entity 
+    geometry = "primitive:plane"
+    position = "-2 0.5 -5" 
+    rotation = "0 90 0"
+    scale = "2 2 2"
+    material = "shader:gif;src:url(https://media.tenor.co/images/23de1f535894b3b564d851702b51aadd/raw);">
+</a-entity>
+
+</html>
+

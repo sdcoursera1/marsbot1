@@ -40,7 +40,7 @@ server.post('/api/messages', connector.listen());
     // Send 'hello world' to the user
   //  session.send("Hello World");
 //});
-
+/*
 intentDialog.matches(/\b(hi|hello|hey|howdy)\b/i, '/sayHi')
     .matches('GetNews', '/topNews')
     .matches('AnalyseImage', '/analyseImage')
@@ -52,7 +52,7 @@ bot.dialog('/sendEmail', [
         session.send("I can send an email to your team member on Earth, what's his/her address?");
     }
 ]);
-/*
+*/
 intentDialog.matches(/\b(hi|hello|hey|howdy)\b/i, '/sayHi') //Check for greetings using regex
     .matches('GetNews', '/topNews') //Check for LUIS intent to get news
     .matches('AnalyseImage', '/analyseImage') //Check for LUIS intent to analyze image
@@ -63,7 +63,7 @@ bot.dialog('/sayHi', function(session) {
     session.send('Hi there!  Try saying things like "Get news in Tokyo"');
     session.endDialog();
 });
-*/
+
 /*
 bot.dialog('/topNews', [
     function (session){
@@ -109,7 +109,7 @@ bot.dialog('/topNews', [
             session.sendTyping();
             // Build the url we'll be calling to get top news
             var url = "https://api.cognitive.microsoft.com/bing/v5.0/news/?" 
-                + "category=" + results.response.entity + "&count=10&mkt=en-US&originalImg=true";
+                + "category=" + results.response.entity + "&count=10&mkt=en-IN&originalImg=true";
             // Build options for the request
             var options = {
                 uri: url,
